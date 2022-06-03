@@ -156,6 +156,8 @@ body {
    font-size: 14px;
    line-height: 1.14;
    letter-spacing: 0.02em;
+   display: flex;
+   align-items: center;
 }
 
 .contacts-icon:hover,
@@ -256,6 +258,18 @@ body {
 .benefits-list-item:not(:last-child),
 .benefits-item:not(:last-child) {
    margin-right: 30px;
+}
+
+.wrap-icon {
+   height: 120px;
+   width: 100%;
+   border-radius: 4px;
+   background-color: var(--secondary-background-two);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   margin-bottom: 30px;
 }
 
 .benefits-text {
@@ -407,13 +421,23 @@ body {
    margin: 15px;
 
    cursor: pointer;
+
+   border-right-width: 2px;
+   border-right-style: solid;
+   border-right-color: #eeeeee;
+   border-bottom-width: 2px;
+   border-bottom-style: solid;
+   border-bottom-color: #eeeeee;
+   border-left-width: 2px;
+   border-left-style: solid;
+   border-left-color: #eeeeee;
+   border-radius: 5px;
 }
 
 .gallery-list-item:hover,
 .gallery-list-item:focus {
-   border: 1px solid #eeeeee;
-   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-      0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12),
+      1px 5px 4px rgba(0, 0, 0, 0.06), 2px 5px 6px rgba(0, 0, 0, 0.16);
 }
 
 .gallery-list-item:focus-visible {
@@ -421,20 +445,18 @@ body {
    border-radius: 4px;
 }
 
+.gallery-list-item img {
+   border-radius: 5px;
+}
+/*
+.gallery-photo {
+   padding: 1px;
+}*/
+
 .caption {
    max-width: 370px;
 
    padding: 20px 24px;
-
-   border-right-width: 1px;
-   border-right-style: solid;
-   border-right-color: #eeeeee;
-   border-bottom-width: 1px;
-   border-bottom-style: solid;
-   border-bottom-color: #eeeeee;
-   border-left-width: 1px;
-   border-left-style: solid;
-   border-left-color: #eeeeee;
 }
 
 .gallery-title {
@@ -455,26 +477,12 @@ body {
 }
 
 /*-----------------Palletizer---------------*/
-.palletizer {
-   padding-top: 230px;
-   padding-bottom: 230px;
-
-   background-color: #c4c4c4;
-   background-image: linear-gradient(
-         rgba(47, 48, 58, 0.2),
-         rgba(47, 48, 58, 0.2)
-      ),
-      url(../images/palletizer-line.jpg);
-   max-width: 1600px;
-   margin: 0 auto;
-}
-
-.palletizer-eqw {
+.equipment {
    padding-top: 50px;
    padding-bottom: 50px;
 }
 
-.palletizer-title {
+.equipment-main-title {
    max-width: 800px;
    margin: 0 auto;
    margin-bottom: 30px;
@@ -489,32 +497,44 @@ body {
    color: var(--accent-text-color);
 }
 
-.palletizer-list {
+.equipment-list {
    display: flex;
    margin: -15px;
    flex-wrap: wrap;
    padding-bottom: 30px;
 }
 
-.palletizer-item {
+.equipment-item {
    margin: 15px;
 }
 
 .photo-gallery {
    border: 1px solid var(--icons-color);
    border-radius: 4px;
-   box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.3);
+   box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.3);
 }
 
-.palletizer-eqw .text {
+.equipment .text {
    padding-top: 3px;
    padding-bottom: 3px;
 
    text-align: justify;
    text-indent: 20px;
+   font-size: 14px;
+   line-height: 1.2;
 }
 
-.harakt {
+.equipment-title {
    padding-top: 30px;
    padding-bottom: 10px;
+
+   font-size: 14px;
+   line-height: 1.2;
+}
+
+.equipment-tech {
+   font-size: 14px;
+   line-height: 1.2;
+
+   padding-left: 30px;
 }
