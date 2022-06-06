@@ -126,6 +126,21 @@ body {
    color: var(--accent-text-color);
 }
 
+.current::after {
+   position: absolute;
+   content: "";
+   width: 100%;
+   height: 4px;
+   border-radius: 2px;
+   background-color: var(--accent-text-color);
+   left: 0;
+   bottom: 0;
+}
+
+.site-nav-item {
+   position: relative;
+}
+
 .site-nav-item:not(:last-child) {
    margin-right: 40px;
 }
@@ -511,7 +526,8 @@ body {
 .photo-gallery {
    border: 1px solid var(--icons-color);
    border-radius: 4px;
-   box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.3);
+   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12),
+      1px 5px 3px rgba(0, 0, 0, 0.06), 2px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .equipment .text {
