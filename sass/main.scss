@@ -1,0 +1,22 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/placeholders";
+
+@import "./base/common";
+@import "./base/reset-ident.scss";
+
+@import "./components/container";
+@import "./components/logo";
+@import "./components/site-nav";
+@import "./components/contacts";
+@import "./components/socials";
+@import "./components/video";
+@import "./components/tables-upload";
+@import "./components/gallery";
+@import "./components/equipment";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/benefits";
+@import "./layout/footer";
+@import "./layout/projects";

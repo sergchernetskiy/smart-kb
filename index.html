@@ -3,6 +3,7 @@
    <head>
       <meta charset="utf-8" />
       <meta name="description" content="Smart-kb" />
+      <link rel="shortcut icon" href="./images/favicon.ico" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link
          rel="preconnect"
@@ -22,44 +23,62 @@
          referrerpolicy="no-referrer"
       />
 
-      <link rel="stylesheet" href="./CSS/styles.css" />
+      <link rel="stylesheet" href="./css/main.min.css" />
    </head>
    <body>
       <!-- Шапка страницы -->
       <header class="header">
          <!-- Навигация на другие страницы -->
          <div class="container">
-            <nav class="header-menu">
-               <a href="./index.html" class="top-logo"
-                  ><span class="first-part-logo">Smart</span>KB</a
+            <nav class="header__menu">
+               <a href="./index.html" class="logo"
+                  >Smart<span class="logo__active">KB</span></a
                >
                <ul class="site-nav list">
-                  <li class="site-nav-item">
-                     <a href="index.html" class="link current">О нас</a>
+                  <li class="site-nav__item">
+                     <a
+                        href="./index.html"
+                        class="site-nav__link site-nav__current"
+                        >О нас</a
+                     >
                   </li>
-                  <li class="site-nav-item">
-                     <a href="./services.html" class="link">Сервис</a>
+                  <li class="site-nav__item">
+                     <a href="./pages/service.html" class="site-nav__link"
+                        >Сервис</a
+                     >
                   </li>
-                  <li class="site-nav-item">
-                     <a href="./projects.html" class="link">Проекты</a>
+                  <li class="site-nav__item">
+                     <a href="./pages/projects.html" class="site-nav__link"
+                        >Проекты</a
+                     >
                   </li>
-                  <li class="site-nav-item">
-                     <a href="./contacts.html" class="link">Контакты</a>
+                  <li class="site-nav__item">
+                     <a href="./pages/contacts.html" class="site-nav__link"
+                        >Контакты</a
+                     >
                   </li>
                </ul>
             </nav>
             <ul class="contacts list">
-               <li class="contacts-item">
-                  <a href="mailto:chbv@ukr.net" class="link contacts-icon">
-                     <svg class="icon-envelope" width="16" height="12">
+               <li class="contacts__item">
+                  <a href="mailto:chbv@ukr.net" class="contacts__link">
+                     <svg
+                        class="contacts__envelope"
+                        width="16"
+                        height="12"
+                     >
                         <use href="./images/icons.svg#envelope"></use>
                      </svg>
                      chbv@ukr.net</a
                   >
                </li>
-               <li class="contacts-item">
-                  <a href="tel:+380672328248" class="link contacts-icon"
-                     ><svg class="icon-smartphone" width="10" height="16">
+               <li class="contacts__item">
+                  <a href="tel:+380672328248" class="contacts__link"
+                     ><svg
+                        class="contacts__smartphone"
+                        width="10"
+                        height="16"
+                     >
                         <use href="./images/icons.svg#smartphone"></use>
                      </svg>
                      +380 67 232 8248</a
@@ -73,35 +92,29 @@
       <main>
          <section class="hero">
             <div class="container">
-               <h1 class="hero-title">Инжиниринговая компания</h1>
+               <h1 class="hero__title">Инжиниринговая компания</h1>
             </div>
          </section>
          <!-- Our benefits -->
          <section class="benefits">
             <div class="container">
-               <h2 class="benefits-hide-title title">
-                  Наши сильные стороны
-               </h2>
+               <h2 class="benefits__title title">Наши сильные стороны</h2>
 
-               <ul class="list">
-                  <li class="benefits-item">
-                     <div class="wrap-icon">
-                        <svg
-                           class="wrap-icon-position"
-                           width="70"
-                           height="70"
-                        >
+               <ul class="benefits__list list">
+                  <li class="benefits__item">
+                     <div class="benefits__wrap-icon">
+                        <svg width="70" height="70">
                            <use href="./images/icons.svg#antena"></use>
                         </svg>
                      </div>
-                     <h3 class="benefits-title">Внимание к деталям</h3>
-                     <p class="benefits-text">
+                     <h3 class="benefits__label">Внимание к деталям</h3>
+                     <p class="benefits__text">
                         Идейные соображения, а также начало повседневной
                         работы по формированию позиции.
                      </p>
                   </li>
-                  <li class="benefits-item">
-                     <div class="wrap-icon">
+                  <li class="benefits__item">
+                     <div class="benefits__wrap-icon">
                         <svg
                            class="wrap-icon-position"
                            width="70"
@@ -110,14 +123,14 @@
                            <use href="./images/icons.svg#clock"></use>
                         </svg>
                      </div>
-                     <h3 class="benefits-title">Пунктуальность</h3>
-                     <p class="benefits-text">
+                     <h3 class="benefits__label">Пунктуальность</h3>
+                     <p class="benefits__text">
                         Задача организации, в особенности же рамки и место
                         обучения кадров влечет за собой.
                      </p>
                   </li>
-                  <li class="benefits-item">
-                     <div class="wrap-icon">
+                  <li class="benefits__item">
+                     <div class="benefits__wrap-icon">
                         <svg
                            class="wrap-icon-position"
                            width="70"
@@ -126,14 +139,14 @@
                            <use href="./images/icons.svg#diagram"></use>
                         </svg>
                      </div>
-                     <h3 class="benefits-title">Планирование</h3>
-                     <p class="benefits-text">
+                     <h3 class="benefits__label">Планирование</h3>
+                     <p class="benefits__text">
                         Равным образом консультация с широким активом в
                         значительной степени обуславливает.
                      </p>
                   </li>
-                  <li class="benefits-item">
-                     <div class="wrap-icon">
+                  <li class="benefits__item">
+                     <div class="benefits__wrap-icon">
                         <svg
                            class="wrap-icon-position"
                            width="70"
@@ -142,8 +155,10 @@
                            <use href="./images/icons.svg#astronaut"></use>
                         </svg>
                      </div>
-                     <h3 class="benefits-title">Современные технологии</h3>
-                     <p class="benefits-text">
+                     <h3 class="benefits__label">
+                        Современные технологии
+                     </h3>
+                     <p class="benefits__text">
                         Значимость этих проблем настолько очевидна, что
                         реализация плановых заданий.
                      </p>
@@ -157,31 +172,33 @@
       <footer class="footer">
          <div class="container">
             <!-- Контакты компании-->
-            <div class="footer-information">
-               <div class="footer-contacts">
-                  <a href="./index.html" class="bottom-logo"
-                     ><span class="first-part-logo">Smart</span>KB</a
+            <div class="footer__information">
+               <div class="footer__contacts">
+                  <a href="./index.html" class="logo"
+                     >Smart<span class="logo__inverse">KB</span></a
                   >
                   <ul class="list">
                      <li>
-                        <address class="adress">
+                        <address class="footer__address">
                            Украина 04107 г. Киев, ул. Подгорная, 12 кв. 31
                         </address>
                      </li>
-                     <li>
-                        <a href="mailto:chbv@ukr.net" class="link mail"
+                     <li class="contacts__item">
+                        <a
+                           href="mailto:chbv@ukr.net"
+                           class="contacts__link footer__mail"
                            >chbv@ukr.net</a
                         >
                      </li>
-                     <li>
-                        <a href="tel:+380672328248" class="link"
+                     <li class="contacts__item">
+                        <a href="tel:+380672328248" class="contacts__link"
                            >+380 67 232 8248</a
                         >
                      </li>
                   </ul>
                </div>
                <div class="footer-contacts">
-                  <p class="message">Присоединяйтесь</p>
+                  <p class="footer__message">Присоединяйтесь</p>
                   <ul class="footer-soc-list list">
                      <li class="footer-soc-item">
                         <a href="" class="footer-soc-link link"
