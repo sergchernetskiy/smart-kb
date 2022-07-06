@@ -1,13 +1,14 @@
 .header {
-   border-bottom-width: 1px;
-   border-bottom-style: solid;
-   border-bottom-color: #ececec;
+  background-color: var(--color-bg-light);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
 
-   .container {
-      @include centeredFlex(flex, center, null);
-   }
+  .container {
+    @include centeredFlex(flex, center, null);
+  }
 }
 
 .header__menu {
-   @include centeredFlex(flex, center, null);
+  @include centeredFlex(flex, center, null);
 }

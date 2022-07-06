@@ -5,13 +5,22 @@
   left: 0;
   bottom: 0;
   padding: 63px 24px;
+  border-radius: 4px;
   transform: translateY(101%);
 
-  background: rgba(33, 150, 243, 0.9);
+  background: rgba(33, 150, 243, 0.8);
   @include font(400, 18px, 1.56, null);
 
   color: var(--color-text-contrast);
-  text-align: justify;
 
   transition: transform 250ms var(--timing-function);
+}
+
+.gallery__transp-ident {
+  color: transparent;
+}
+
+.gallery__link-hover:hover {
+  color: yellow;
+  font-weight: 500;
 }
