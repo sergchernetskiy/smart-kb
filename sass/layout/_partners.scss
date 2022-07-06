@@ -1,0 +1,20 @@
+.partners {
+  background-color: #fafafa;
+
+  @include typicalPadding(60px, 60px);
+}
+
+.partners__title {
+}
+
+.partners__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.partners__item {
+}
+
+.partners__link {
+}

@@ -1,28 +1,26 @@
 .hero {
-   padding-top: 230px;
-   padding-bottom: 230px;
+  position: relative;
 
-   background-color: #c4c4c4;
-   background-image: linear-gradient(
-         rgba(47, 48, 58, 0.2),
-         rgba(47, 48, 58, 0.2)
-      ),
-      url(../images/bacground-main.jpg);
-   max-width: 1600px;
-   margin: 0 auto;
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+  width: 1600px;
+  margin: 0 auto;
 }
 
 .hero__title {
-   max-width: 800px;
-   margin: 0 auto;
-   margin-bottom: 30px;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  max-width: 900px;
+  z-index: 2;
 
-   font-weight: 900;
-   font-size: 44px;
-   line-height: 1.36;
-   text-align: center;
-   letter-spacing: 0.06em;
-   text-transform: uppercase;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 
-   color: var(--color-text-contrast);
+  color: var(--color-text-contrast);
+
+  transform: translate(-50%, -50%);
 }

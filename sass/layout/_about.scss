@@ -1,0 +1,32 @@
+.about {
+  @include typicalPadding(60px, 60px);
+  position: relative;
+
+  background-color: var(--color-bg-light);
+}
+
+.about__card {
+  display: flex;
+}
+
+.about__text-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+}
+.about__img {
+}
+.about__text {
+  padding-left: 10px;
+  text-align: justify;
+  text-indent: 25px;
+
+  @include font(400, 15px, 1.17, null);
+}
+
+.about--text-color {
+  font-style: italic;
+  color: var(--color-text-accent);
+}

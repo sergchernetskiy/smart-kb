@@ -1,257 +1,431 @@
 <!DOCTYPE html>
 <html lang="ru">
-   <head>
-      <meta charset="utf-8" />
-      <meta name="description" content="Smart-kb" />
-      <link rel="shortcut icon" href="./images/favicon.ico" />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link
-         rel="preconnect"
-         href="https://fonts.gstatic.com"
-         crossorigin
-      />
-      <link
-         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-         rel="stylesheet"
-      />
-      <title>Smart-kb</title>
-      <link
-         rel="stylesheet"
-         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-         crossorigin="anonymous"
-         referrerpolicy="no-referrer"
-      />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Smart-kb" />
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Smart-kb</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
-      <link rel="stylesheet" href="./css/main.min.css" />
-   </head>
-   <body>
-      <!-- Шапка страницы -->
-      <header class="header">
-         <!-- Навигация на другие страницы -->
-         <div class="container">
-            <nav class="header__menu">
-               <a href="./index.html" class="logo"
-                  >Smart<span class="logo__active">KB</span></a
-               >
-               <ul class="site-nav list">
-                  <li class="site-nav__item">
-                     <a
-                        href="./index.html"
-                        class="site-nav__link site-nav__current"
-                        >О нас</a
-                     >
-                  </li>
-                  <li class="site-nav__item">
-                     <a href="./pages/service.html" class="site-nav__link"
-                        >Сервис</a
-                     >
-                  </li>
-                  <li class="site-nav__item">
-                     <a href="./pages/projects.html" class="site-nav__link"
-                        >Проекты</a
-                     >
-                  </li>
-                  <li class="site-nav__item">
-                     <a href="./pages/contacts.html" class="site-nav__link"
-                        >Контакты</a
-                     >
-                  </li>
-               </ul>
-            </nav>
-            <ul class="contacts list">
-               <li class="contacts__item">
-                  <a href="mailto:chbv@ukr.net" class="contacts__link">
-                     <svg
-                        class="contacts__envelope"
-                        width="16"
-                        height="12"
-                     >
-                        <use href="./images/icons.svg#envelope"></use>
-                     </svg>
-                     chbv@ukr.net</a
-                  >
-               </li>
-               <li class="contacts__item">
-                  <a href="tel:+380672328248" class="contacts__link"
-                     ><svg
-                        class="contacts__smartphone"
-                        width="10"
-                        height="16"
-                     >
-                        <use href="./images/icons.svg#smartphone"></use>
-                     </svg>
-                     +380 67 232 8248</a
-                  >
-               </li>
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- Шапка страницы -->
+    <header class="header">
+      <!-- Навигация на другие страницы -->
+      <div class="container">
+        <nav class="header__menu">
+          <a href="./index.html" class="logo"
+            >Smart<span class="logo__active">KB</span></a
+          >
+          <ul class="site-nav list">
+            <li class="site-nav__item">
+              <a
+                href="./index.html"
+                class="site-nav__link site-nav__current"
+                >О нас</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a href="./pages/service.html" class="site-nav__link"
+                >Сервис</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a href="./pages/projects.html" class="site-nav__link"
+                >Проекты</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a href="./pages/contacts.html" class="site-nav__link"
+                >Контакты</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts list">
+          <li class="contacts__item">
+            <a href="mailto:chbv@ukr.net" class="contacts__link">
+              <svg class="contacts__envelope" width="16" height="12">
+                <use href="./images/icons.svg#envelope"></use>
+              </svg>
+              chbv@ukr.net</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+380672328248" class="contacts__link"
+              ><svg class="contacts__smartphone" width="10" height="16">
+                <use href="./images/icons.svg#smartphone"></use>
+              </svg>
+              +380 67 232 8248</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Unique page content -->
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="swiper mySwiper">
+            <h1 class="hero__title">Инжиниринговая компания</h1>
+            <div class="slider swiper-wrapper">
+              <img
+                class="swiper-slide"
+                src="./images/hero-1.jpg"
+                alt="Проект Яхонт"
+              />
+              <img
+                class="swiper-slide"
+                src="./images/hero-2.jpg"
+                alt="Проект"
+              />
+              <img
+                class="swiper-slide"
+                src="./images/hero-3.jpg"
+                alt="Бункер-смеситель"
+              />
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our benefits -->
+      <section class="benefits">
+        <div class="container">
+          <h2 class="benefits__title title">Наши сильные стороны</h2>
+
+          <ul class="benefits__list list">
+            <li class="benefits__item">
+              <div class="benefits__wrap-icon">
+                <svg width="70" height="70">
+                  <use href="./images/icons.svg#antena"></use>
+                </svg>
+              </div>
+              <h3 class="benefits__label">Внимание к деталям</h3>
+              <p class="benefits__text">
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__wrap-icon">
+                <svg class="wrap-icon-position" width="70" height="70">
+                  <use href="./images/icons.svg#clock"></use>
+                </svg>
+              </div>
+              <h3 class="benefits__label">Пунктуальность</h3>
+              <p class="benefits__text">
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
+              </p>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__wrap-icon">
+                <svg class="wrap-icon-position" width="70" height="70">
+                  <use href="./images/icons.svg#diagram"></use>
+                </svg>
+              </div>
+              <h3 class="benefits__label">Планирование</h3>
+              <p class="benefits__text">
+                Равным образом консультация с широким активом в
+                значительной степени обуславливает.
+              </p>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__wrap-icon">
+                <svg class="wrap-icon-position" width="70" height="70">
+                  <use href="./images/icons.svg#astronaut"></use>
+                </svg>
+              </div>
+              <h3 class="benefits__label">Современные технологии</h3>
+              <p class="benefits__text">
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- About us -->
+      <section class="about">
+        <div class="container">
+          <h2 class="about__title title">О нас</h2>
+          <div class="about__card">
+            <button type="button" class="button" data-modal-open>
+              <img
+                class="about__img"
+                src="./images/svidotstvo.jpg"
+                alt="Свидетельство"
+                width="250"
+                height="343"
+              />
+            </button>
+            <div class="about__text-wrapper">
+              <p class="about__text">
+                Разрешите Вам представить нашу инжиниринговую компанию,
+                которая была основана еще в 2003г. С момента основания мы
+                были ориентированы на проектирование и изготовление
+                вакуумного оборудования для выращивания кристаллов кремния
+                и сапфира. С того времени нами успешно было реализовано
+                большое количество проектов в данных областях. Нашими
+                основными Заказчиками в этих сегментах есть международный
+                холдинг Pillar Group, польская компания Juropol Sp. z o.o.
+                и другие заказчики из Европы, Азии и Украины.
+              </p>
+              <p class="about__text">
+                В штате нашей компании работают высококвалифицированные
+                специалисты-проектанты имеющие профильные навыки в области
+                вакуумной техники, гидравлики, приборостроения,
+                авиастроения, приводной техники, а также прочностных
+                расчетов. Каждый специалист свободно использует
+                прогрессивные средства параметрического проектирования. Все
+                эти факторы позволяют нам быть достаточно гибкими к
+                большинству Заказчиков и качественно реализовывать все
+                проекты.
+              </p>
+              <p class="about__text">
+                Для большинства Заказчиков мы интересны еще и тем, что
+                имеем возможность не только выполнить конструкторскую
+                документацию, а так же изготовить изделия на наших
+                мощностях и провести пуско-наладочные работы на территории
+                Заказчика. Это снимает большое количество вопросов у наших
+                Заказчиков, так как на основании одного Технического
+                задания они получают готовый продукт «под ключ».
+              </p>
+              <p class="about__text">
+                Технические возможности наших металлообрабатывающих цехов
+                достаточно широки. Мы имеем широкий парк оборудования
+                заготовительного участка (лазерная установка,
+                гидроабразивная установка, плазменная установка,
+                ленточнопильные станки, валковые гибочные станки,
+                гильотина, пресса). Также в арсенале наших возможностей
+                широкий парк фрезерных станков с ЧПУ, с возможностью
+                обработки деталей габаритами 1200x2500x1500 мм (ВхДхШ),
+                токарный парк, все виды шлифовальных станков, большой
+                комплекс сварочного оборудования со сварочным роботом
+                Panasonic.
+              </p>
+              <p class="about__text about--text-color">
+                Мы помогаем развиваться нашим заказчикам и сами постоянно
+                совершенствуемся и прогрессируем
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="partners">
+        <div class="container">
+          <h2 class="partners__title title">Наши партнеры</h2>
+          <ul class="partners__list list">
+            <li class="partners__item">
+              <a href="http://www.svaltera.ua/" class="partners__link"
+                ><img
+                  src="./images/partners/svaltera.png"
+                  alt="СВ Альтера"
+                  width="140"
+                  height="66"
+              /></a>
+            </li>
+            <li class="partners__item">
+              <a href="http://www.mksinst.com/" class="partners__link"
+                ><img
+                  src="./images/partners/mks.png"
+                  alt="MKS"
+                  width="140"
+                  height="66"
+              /></a>
+            </li>
+            <li class="partners__item">
+              <a href="http://fractalnost.com.ua/" class="partners__link"
+                ><img
+                  src="./images/partners/fractal.png"
+                  alt="Фрактальность"
+                  width="140"
+                  height="66"
+              /></a>
+            </li>
+            <li class="partners__item">
+              <a
+                href="http://www.ponar-silesia.com/"
+                class="partners__link"
+                ><img
+                  src="./images/partners/ponar.png"
+                  alt="Ponar"
+                  width="140"
+                  height="66"
+              /></a>
+            </li>
+            <li class="partners__item">
+              <a href="http://www.fam.com.ua/" class="partners__link"
+                ><img
+                  src="./images/partners/fam.png"
+                  alt="FAM"
+                  width="140"
+                  height="66"
+              /></a>
+            </li>
+            <li class="partners__item">
+              <a
+                href="https://www.edwardsvacuum.com/"
+                class="partners__link"
+                ><img
+                  src="./images/partners/edwardsvacuum.png"
+                  alt="Edwards"
+                  width="140"
+                  height="66"
+              /></a>
+            </li>
+            <!--<li class="partners__item">
+              <a href="http://galp.com.ua/ua" class="partners__link"
+                ><img
+                  src="./images/partners/galp.png"
+                  alt="Галподшипник"
+                  width="140"
+                  height="66"
+              /></a>
+            </li>-->
+            <li class="partners__item">
+              <a
+                href="https://www.pfeiffer-vacuum.com/en/"
+                class="partners__link"
+                ><img
+                  src="./images/partners/pfeiffer.png"
+                  alt="Pfeiffer"
+                  width="140"
+                  height="66"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <!-- Контакты компании-->
+        <div class="footer__information">
+          <div class="footer__contacts">
+            <a href="./index.html" class="logo"
+              >Smart<span class="logo__inverse">KB</span></a
+            >
+            <ul class="list">
+              <li>
+                <address class="footer__address">
+                  Украина 04107 г. Киев, ул. Подгорная, 12 кв. 31
+                </address>
+              </li>
+              <li class="contacts__item">
+                <a
+                  href="mailto:chbv@ukr.net"
+                  class="contacts__link footer__mail"
+                  >chbv@ukr.net</a
+                >
+              </li>
+              <li class="contacts__item">
+                <a href="tel:+380672328248" class="contacts__link"
+                  >+380 67 232 8248</a
+                >
+              </li>
             </ul>
-         </div>
-      </header>
+          </div>
+          <div class="footer-contacts">
+            <p class="footer__message">Присоединяйтесь</p>
+            <ul class="footer-soc-list list">
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link link"
+                  ><svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#instagram"></use></svg
+                ></a>
+              </li>
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link link"
+                  ><svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#twitter"></use></svg
+                ></a>
+              </li>
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link link"
+                  ><svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#facebook"></use></svg
+                ></a>
+              </li>
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link link"
+                  ><svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#linkedin"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Modal window-->
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button type="button" data-modal-close class="modal__btn-close">
+          <svg width="18" height="18">
+            <use href="./images/icons.svg#close-black"></use>
+          </svg>
+        </button>
+        <form class="form">
+          <img
+            src="./images/svidotstvo.jpg"
+            alt="Свидетельство"
+            width="100%"
+          />
+        </form>
+      </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-      <!-- Unique page content -->
-      <main>
-         <section class="hero">
-            <div class="container">
-               <h1 class="hero__title">Инжиниринговая компания</h1>
-            </div>
-         </section>
-         <!-- Our benefits -->
-         <section class="benefits">
-            <div class="container">
-               <h2 class="benefits__title title">Наши сильные стороны</h2>
-
-               <ul class="benefits__list list">
-                  <li class="benefits__item">
-                     <div class="benefits__wrap-icon">
-                        <svg width="70" height="70">
-                           <use href="./images/icons.svg#antena"></use>
-                        </svg>
-                     </div>
-                     <h3 class="benefits__label">Внимание к деталям</h3>
-                     <p class="benefits__text">
-                        Идейные соображения, а также начало повседневной
-                        работы по формированию позиции.
-                     </p>
-                  </li>
-                  <li class="benefits__item">
-                     <div class="benefits__wrap-icon">
-                        <svg
-                           class="wrap-icon-position"
-                           width="70"
-                           height="70"
-                        >
-                           <use href="./images/icons.svg#clock"></use>
-                        </svg>
-                     </div>
-                     <h3 class="benefits__label">Пунктуальность</h3>
-                     <p class="benefits__text">
-                        Задача организации, в особенности же рамки и место
-                        обучения кадров влечет за собой.
-                     </p>
-                  </li>
-                  <li class="benefits__item">
-                     <div class="benefits__wrap-icon">
-                        <svg
-                           class="wrap-icon-position"
-                           width="70"
-                           height="70"
-                        >
-                           <use href="./images/icons.svg#diagram"></use>
-                        </svg>
-                     </div>
-                     <h3 class="benefits__label">Планирование</h3>
-                     <p class="benefits__text">
-                        Равным образом консультация с широким активом в
-                        значительной степени обуславливает.
-                     </p>
-                  </li>
-                  <li class="benefits__item">
-                     <div class="benefits__wrap-icon">
-                        <svg
-                           class="wrap-icon-position"
-                           width="70"
-                           height="70"
-                        >
-                           <use href="./images/icons.svg#astronaut"></use>
-                        </svg>
-                     </div>
-                     <h3 class="benefits__label">
-                        Современные технологии
-                     </h3>
-                     <p class="benefits__text">
-                        Значимость этих проблем настолько очевидна, что
-                        реализация плановых заданий.
-                     </p>
-                  </li>
-               </ul>
-            </div>
-         </section>
-      </main>
-
-      <!-- Footer -->
-      <footer class="footer">
-         <div class="container">
-            <!-- Контакты компании-->
-            <div class="footer__information">
-               <div class="footer__contacts">
-                  <a href="./index.html" class="logo"
-                     >Smart<span class="logo__inverse">KB</span></a
-                  >
-                  <ul class="list">
-                     <li>
-                        <address class="footer__address">
-                           Украина 04107 г. Киев, ул. Подгорная, 12 кв. 31
-                        </address>
-                     </li>
-                     <li class="contacts__item">
-                        <a
-                           href="mailto:chbv@ukr.net"
-                           class="contacts__link footer__mail"
-                           >chbv@ukr.net</a
-                        >
-                     </li>
-                     <li class="contacts__item">
-                        <a href="tel:+380672328248" class="contacts__link"
-                           >+380 67 232 8248</a
-                        >
-                     </li>
-                  </ul>
-               </div>
-               <div class="footer-contacts">
-                  <p class="footer__message">Присоединяйтесь</p>
-                  <ul class="footer-soc-list list">
-                     <li class="footer-soc-item">
-                        <a href="" class="footer-soc-link link"
-                           ><svg
-                              class="footer-soc-icon"
-                              width="20"
-                              height="20"
-                           >
-                              <use
-                                 href="./images/icons.svg#instagram"
-                              ></use></svg
-                        ></a>
-                     </li>
-                     <li class="footer-soc-item">
-                        <a href="" class="footer-soc-link link"
-                           ><svg
-                              class="footer-soc-icon"
-                              width="20"
-                              height="20"
-                           >
-                              <use
-                                 href="./images/icons.svg#twitter"
-                              ></use></svg
-                        ></a>
-                     </li>
-                     <li class="footer-soc-item">
-                        <a href="" class="footer-soc-link link"
-                           ><svg
-                              class="footer-soc-icon"
-                              width="20"
-                              height="20"
-                           >
-                              <use
-                                 href="./images/icons.svg#facebook"
-                              ></use></svg
-                        ></a>
-                     </li>
-                     <li class="footer-soc-item">
-                        <a href="" class="footer-soc-link link"
-                           ><svg
-                              class="footer-soc-icon"
-                              width="20"
-                              height="20"
-                           >
-                              <use
-                                 href="./images/icons.svg#linkedin"
-                              ></use></svg
-                        ></a>
-                     </li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-      </footer>
-   </body>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
+  </body>
 </html>

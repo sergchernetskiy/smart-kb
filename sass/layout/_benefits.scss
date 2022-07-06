@@ -1,42 +1,41 @@
 .benefits {
-   padding-top: var(--typical-padding-ident);
-   padding-bottom: var(--typical-padding-ident);
+  @include typicalPadding(60px, 60px);
 }
 
 .benefits__title {
-   @extend %is-hidden;
+  @extend %is-hidden;
 }
 
 .benefits__label {
-   margin-bottom: 10px;
+  margin-bottom: 10px;
 
-   @include font(700, 14px, 1.14, null);
-   text-transform: uppercase;
+  @include font(700, 14px, 1.14, null);
+  text-transform: uppercase;
 }
 
 .benefits__list {
-   display: flex;
+  display: flex;
 }
 
 .benefits__item {
-   width: 270px;
+  width: 270px;
 
-   &:not(:last-child) {
-      margin-right: 30px;
-   }
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .benefits__wrap-icon {
-   height: 120px;
-   width: 100%;
-   border-radius: 4px;
-   background-color: var(--color-bg-light);
-   @include centeredFlex(flex, center, center);
+  height: 120px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: var(--color-bg-light);
+  @include centeredFlex(flex, center, center);
 
-   margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .benefits__text {
-   @include font(400, 14px, 2, null);
-   color: var(--color-text-secondary);
+  @include font(400, 14px, 2, null);
+  color: var(--color-text-secondary);
 }
