@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="description" content="Smart-kb" />
+    <link rel="shortcut icon" href="./images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>SmartKB: Обшивка стола</title>
+    <title>SmartKB: Проектирование изделий</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -27,23 +28,21 @@
       <div class="container">
         <nav class="header__menu">
           <a href="../../index.html" class="logo"
-            >Smart<span class="logo__active">KB</span></a
+            >Smart<span class="logo__active"> KB</span></a
           >
           <ul class="site-nav list">
             <li class="site-nav__item">
               <a href="../../index.html" class="site-nav__link">О нас</a>
             </li>
             <li class="site-nav__item">
-              <a href="./pages/service.html" class="site-nav__link"
+              <a
+                href="../service.html"
+                class="site-nav__link site-nav__current"
                 >Сервис</a
               >
             </li>
             <li class="site-nav__item">
-              <a
-                href="../projects.html"
-                class="site-nav__link site-nav__current"
-                >Проекты</a
-              >
+              <a href="../projects.html" class="site-nav__link">Проекты</a>
             </li>
             <li class="site-nav__item">
               <a href="./pages/contacts.html" class="site-nav__link"
@@ -77,56 +76,63 @@
     <main>
       <section class="equipment">
         <div class="container">
-          <h1 class="equipment-main-title">
-            Шумоизоляция стола накопительного
-          </h1>
-          <ul class="equipment-list list">
-            <li class="equipment-item">
-              <img
-                src="../../images/obshivka.jpg"
-                alt="Шумоизоляция стола"
-                class="photo-gallery"
-                width="370"
-                height="300"
-              />
-            </li>
-            <li class="equipment-item">
-              <img
-                src="../../images/obshivka-two.jpg"
-                alt="Шумоизоляция стола"
-                class="photo-gallery"
-                width="370"
-                height="300"
-              />
-            </li>
-            <li class="equipment-item">
-              <img
-                src="../../images/obshivka-three.jpg"
-                alt="Шумоизоляция стола"
-                class="photo-gallery"
-                width="370"
-                height="300"
-              />
-            </li>
-          </ul>
+          <h1 class="equipment-main-title">Проектирование изделий</h1>
+          <picture>
+            <source
+              srcset="
+                    ../../images/service/design/design.jpg 1x
+                    ../../images/service/design/design-2x.jpg 2x
+                  "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ../../images/service/design/design-tab.jpg    1x,
+                ../../images/service/design/design-tab-2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ../../images/service/design/design-mob.jpg    1x,
+                ../../images/service/design/design-mob-2x.jpg 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              src="../../images/service/design/design.jpg"
+              alt="Сборочный узел"
+              width="1170"
+            />
+          </picture>
           <p class="text">
-            Накопительный ротационный стол является буферным звеном
-            автоматической линии. По линии движутся стеклянные бутылочки и
-            при соприкосновении друг об друга создавали шумовые показатели
-            выше установленной нормы. Наша компания разработаа проект
-            документации, изготовила и установила элементы шумозащитных
-            узлов на стационарный стол автоматической линии. Материал
-            шумозащитного изделия - пищевая нержавеющая сталь.
+            Наша компания имеет в своем распоряжении ресурс разработчиков
+            высокой квалификации, способных решать задачи из разных
+            областей механики, гидравлики, электроники. Используя
+            современные инструменты проектирования, мы имеем возможность
+            максимально быстро предоставить Заказчику визуализацию
+            конечного продукта в твердотельном виде и согласовать все
+            вопросы по изделию еще до этапа выпуска конструкторской
+            документации, что сократит время на производство конечного
+            продукта.
           </p>
-
-          <h2 class="equipment-title">Технические характеристики:</h2>
-          <ul class="equipment-tech">
-            <li>Габариты установки: 1200х1200х350мм;</li>
-            <li>Количество смотровых окон: 3шт;</li>
-            <li>Максимальная высота слитка: 3000мм;</li>
-            <li>Верхние полукрышки: подъемные;</li>
-            <li>Материал верхней полукрышки: прозрачное оргстекло;</li>
-          </ul>
+          <p class="text">
+            Также, благодаря этим инструментам и алгоритмам работы, мы
+            можем сократить время маркетологам на подготовку
+            презентационного материала по изделию, еще до его реализации в
+            металле.
+          </p>
+          <p class="text">
+            Политика нашей компании в части разработки конструкторской
+            документации очень лояльна к Заказчику. По соглашению Сторон,
+            мы, как правило, выпускаем конструкторскую документацию под
+            логотипом Заказчика. Это дает возможность Вам быть
+            правообладателем исходников всех разработанных изделий и
+            свободно распоряжаться этими файлами.
+          </p>
+          <p class="about__text about--text-color">
+            Если у Вас зародилась мысль – мы ее материализуем
+          </p>
         </div>
       </section>
     </main>
