@@ -37,18 +37,18 @@
             </li>
             <li class="site-nav__item">
               <a
-                href="./pages/service.html"
+                href="../pages/service.html"
                 class="site-nav__link site-nav__current"
                 >Сервис</a
               >
             </li>
             <li class="site-nav__item">
-              <a href="./sass/pages/projects.html" class="site-nav__link"
+              <a href="../pages/projects.html" class="site-nav__link"
                 >Проекты</a
               >
             </li>
             <li class="site-nav__item">
-              <a href="./pages/contacts.html" class="site-nav__link"
+              <a href="../pages/contacts.html" class="site-nav__link"
                 >Контакты</a
               >
             </li>
@@ -81,109 +81,200 @@
         <div class="container">
           <h1 class="portfolio-title">Сервис</h1>
 
-          <ul class="gallery-list list">
-            <li class="gallery-list-item">
+          <ul class="service__list list">
+            <li class="service__item">
               <a
                 href="./projects/palletizer.html"
-                class="gallery__link link"
-                ><div class="gallery__product-thumb">
-                  <img
-                    src="../images/palletizer.jpg"
-                    alt="Установка паллетирования"
-                    class="gallery-photo"
-                    width="368"
-                    height="100%"
-                  />
-                  <p class="gallery__overlay">
+                class="service__link link"
+                ><div class="service__product-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ../images/service/hand.jpg    1x,
+                        ../images/service/hand-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ../images/service/hand-tab.jpg    1x,
+                        ../images/service/hand-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ../images/service/hand-mob.jpg    1x,
+                        ../images/service/hand-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="../images/service/hand.jpg"
+                      alt="3D модель руки"
+                    />
+                  </picture>
+                  <p class="service__overlay">
                     Решаем задачи из разных областей механики, гидравлики,
                     электроники и максимально быстро предоставляем
                     визуализацию конечного продукта.
-                    <span class="gallery__transp-ident"
-                      >прозрачность прозрачность</span
+                    <span class="service__transp-ident"
+                      >прозрачность прозрачность прозрачность прозрачность
+                      прозрачность прозрачность прозрачность прозрачность
+                      прозрачность прозрачность прозрачность
+                      прозрачность</span
                     >
-                    <span class="gallery__link-hover">Подробнее...</span>
+                    <span class="service__link-color">Подробнее...</span>
                   </p>
                 </div>
-                <div class="caption">
-                  <h3 class="gallery-title">Проектирование изделий</h3>
+                <div class="service__caption">
+                  <h3 class="service__title">Проектирование изделий</h3>
                 </div></a
               >
             </li>
-            <li class="gallery-list-item">
-              <a href="./projects/blender.html" class="gallery__link link"
-                ><div class="gallery__product-thumb">
-                  <img
-                    src="../images/blender.jpg"
-                    alt="Установка смешивания"
-                    class="gallery-photo"
-                    width="370"
-                    height="296"
-                  />
-                  <p class="gallery__overlay">
+            <li class="service__item">
+              <a href="./projects/blender.html" class="service__link link"
+                ><div class="service__product-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ../images/service/machine.jpg    1x,
+                        ../images/service/machine-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ../images/service/machine-tab.jpg    1x,
+                        ../images/service/machine-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ../images/service/machine-mob.jpg    1x,
+                        ../images/service/machine-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="../images/service/machine.jpg"
+                      alt="3D модель руки"
+                    />
+                  </picture>
+                  <p class="service__overlay">
                     Большой парк оборудования, который позволяет закрыть
                     абсолютно все технологические переходы для изготовления
                     изделий.
-                    <span class="gallery__transp-ident"
-                      >прозрачность прозрачность прозрачность
-                    </span>
-                    <span class="gallery__link-hover">Подробнее...</span>
+                    <span class="service__transp-ident"
+                      >прозрачность прозрачность прозрачность прозрачность
+                      прозрачность прозрачность прозрачность прозрачность
+                      прозрачность прозрачность прозрачность прозрачность
+                      прозрачность прозрачность</span
+                    >
+                    <span class="service__link-color">Подробнее...</span>
                   </p>
                 </div>
-                <div class="caption">
-                  <h2 class="gallery-title">Изготовление изделий</h2>
+                <div class="service__caption">
+                  <h2 class="service__title">Изготовление изделий</h2>
                 </div></a
               >
             </li>
-            <li class="gallery-list-item">
-              <a href="./projects/obshivka.html" class="gallery__link link"
-                ><div class="gallery__product-thumb">
-                  <img
-                    src="../images/obshivka.jpg"
-                    alt="Стол накопительный"
-                    class="gallery-photo"
-                    width="370"
-                    height="296"
-                  />
-                  <p class="gallery__overlay">
+            <li class="service__item">
+              <a href="./projects/obshivka.html" class="service__link link"
+                ><div class="service__product-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ../images/service/assembling.jpg    1x,
+                        ../images/service/assembling-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ../images/service/assembling-tab.jpg    1x,
+                        ../images/service/assembling-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ../images/service/assembling-mob.jpg    1x,
+                        ../images/service/assembling-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="../images/service/assembling.jpg"
+                      alt="3D модель руки"
+                    />
+                  </picture>
+                  <p class="service__overlay">
                     Способны автономно выполнить монтаж оборудования с
                     обязательным подключением ко всем цеховым
                     коммуникациям.
-                    <span class="gallery__transp-ident"
-                      >прозрачность прозрачность прозрачность
-                      прозрачность</span
+                    <span class="service__transp-ident"
+                      >прозрачность прозрачность прозрачность прозрачность
+                      прозрачность прозрачность прозрачность прозрачность
+                      прозрачность прозрачность прозрачность прозрачность
+                      прозрачность прозрачность</span
                     >
-                    <span class="gallery__link-hover">Подробнее...</span>
+                    <span class="service__link-color">Подробнее...</span>
                   </p>
                 </div>
-                <div class="caption">
-                  <h2 class="gallery-title">Пуско-наладочные работы</h2>
+                <div class="service__caption">
+                  <h2 class="service__title">Пуско-наладочные работы</h2>
                 </div></a
               >
             </li>
-            <li class="gallery-list-item">
+            <li class="service__item">
               <a
                 href="./projects/electroshlak.html"
-                class="gallery__link link"
-                ><div class="gallery__product-thumb">
-                  <img
-                    src="../images/electroshlak.jpg"
-                    alt="Установка ЭШЛ переплава"
-                    class="gallery-photo"
-                    width="370"
-                    height="296"
-                  />
-                  <p class="gallery__overlay">
+                class="service__link link"
+                ><div class="service__product-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ../images/service/patent.jpg    1x,
+                        ../images/service/patent-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ../images/service/patent-tab.jpg    1x,
+                        ../images/service/patent-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ../images/service/patent-mob.jpg    1x,
+                        ../images/service/patent-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="../images/service/patent.jpg"
+                      alt="3D модель руки"
+                    />
+                  </picture>
+                  <p class="service__overlay">
                     Уважаем принципы авторского права, мы рекомендуем и
                     помогаем всем нашим заказчикам патентовать их идеи.
-                    <span class="gallery__transp-ident"
+                    <span class="service__transp-ident"
                       >прозрачность прозрачность прозрачность прозрачность
+                      прозрачность прозрачность прозрачность прозрачность
+                      прозрачность прозрачность прозрачность прозрачность
+                      прозрачность прозрачность прозрачность
                       прозрачность</span
                     >
-                    <span class="gallery__link-hover">Подробнее...</span>
+                    <span class="service__link-color">Подробнее...</span>
                   </p>
                 </div>
-                <div class="caption">
-                  <h2 class="gallery-title">
+                <div class="service__caption">
+                  <h2 class="service__title">
                     Патентование и сертификация
                   </h2>
                 </div></a
