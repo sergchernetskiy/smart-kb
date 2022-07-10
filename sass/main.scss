@@ -6,9 +6,10 @@
 @import "./base/reset-ident.scss";
 
 @import "./components/container";
+@import "./components/animate";
 @import "./components/logo";
 @import "./components/site-nav";
-@import "./components/contacts";
+@import "./components/head-cont";
 @import "./components/socials";
 @import "./components/title";
 @import "./components/button";
@@ -19,6 +20,7 @@
 @import "./components/tables-upload";
 @import "./components/gallery";
 @import "./components/equipment";
+@import "./components/form";
 
 @import "./layout/header";
 @import "./layout/mobile-menu";
@@ -30,3 +32,4 @@
 @import "./layout/footer";
 @import "./layout/service";
 @import "./layout/projects";
+@import "./layout/contacts";

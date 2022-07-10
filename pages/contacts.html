@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Эффективные решения для вашего бизнеса"
+    />
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>SmartKB: Контакты</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/main.min.css" />
+  </head>
+  <body>
+    <!-- Шапка страницы -->
+    <header class="header">
+      <!-- Навигация на другие страницы -->
+      <div class="container">
+        <nav class="header__menu">
+          <a href="../index.html" class="logo"
+            >Smart<span class="logo__active">KB</span></a
+          >
+          <ul class="site-nav list">
+            <li class="site-nav__item">
+              <a href="../index.html" class="site-nav__link">О нас</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="../pages/service.html" class="site-nav__link"
+                >Сервис</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a href="../pages/projects.html" class="site-nav__link"
+                >Проекты</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a
+                href="../pages/contacts.html"
+                class="site-nav__link site-nav__current"
+                >Контакты</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts list">
+          <li class="contacts__item">
+            <a href="mailto:chbv@ukr.net" class="contacts__link">
+              <svg class="contacts__envelope" width="16" height="12">
+                <use href="./images/icons.svg#envelope"></use>
+              </svg>
+              chbv@ukr.net</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+380672328248" class="contacts__link"
+              ><svg class="contacts__smartphone" width="10" height="16">
+                <use href="./images/icons.svg#smartphone"></use>
+              </svg>
+              +380 67 232 8248</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Unique page content -->
+    <main>
+      <section class="address">
+        <div class="container">
+          <div class="address__wrapper">
+            <div class="address__contacts">
+              <h2>Наши контакты</h2>
+              <ul class="list">
+                <li>
+                  <p class="address__title">Юридический адрес</p>
+                  <address class="address__info">
+                    Украина 04107 г. Киев, ул. Подгорная, 12 кв. 31
+                  </address>
+                  <a href="tel:+380444894299" class="adress__link link"
+                    >+380 44 489 4299</a
+                  >
+                  <a href="tel:+380672328248" class="adress__link link"
+                    >+380 67 232 8248</a
+                  >
+                </li>
+                <li>
+                  <p class="address__title">Производственные площадки</p>
+                  <address class="address__info">
+                    г. Киев, ул. Бориспольская, 9
+                  </address>
+                  <address class="address__info">
+                    г. Киев, ул. Северо-сырецкая, 3
+                  </address>
+                </li>
+              </ul>
+            </div>
+            <form class="form">
+              <h2 class="form__title">Контактная форма</h2>
+              <div class="form__field">
+                <input
+                  type="text"
+                  class="form__input"
+                  required
+                  title="Анатолий"
+                  name="user-name"
+                  id="user-name"
+                  placeholder=" "
+                />
+                <svg class="form__icon" width="18" height="18">
+                  <use href="../images/icons.svg#icon-person"></use>
+                </svg>
+                <label for="user-name" autofocus class="form__label"
+                  >Имя</label
+                >
+              </div>
+              <div class="form__field">
+                <input
+                  type="number"
+                  class="form__input"
+                  required
+                  title="+380 67 111 2211"
+                  name="user-tel"
+                  id="user-tel"
+                  placeholder=" "
+                />
+                <svg class="form__icon" width="18" height="18">
+                  <use href="../images/icons.svg#icon-phone"></use>
+                </svg>
+                <label for="user-tel" class="form__label">Телефон</label>
+              </div>
+              <div class="form__field">
+                <input
+                  type="email"
+                  class="form__input"
+                  title="user@gmail.com"
+                  name="user-email"
+                  id="user-email"
+                  placeholder=" "
+                />
+                <svg class="form__icon" width="18" height="18">
+                  <use href="../images/icons.svg#icon-email"></use>
+                </svg>
+                <label for="user-email" class="form__label">Почта</label>
+              </div>
+              <div class="form__area">
+                <textarea
+                  name="user-text"
+                  id="user-text"
+                  class="form__textarea"
+                  placeholder="Введите текст"
+                ></textarea>
+                <label for="user-text" class="form__label"
+                  >Комментарий</label
+                >
+              </div>
+              <p class="form__text">
+                Отправляя форму вы соглашаетесь с договором публичной
+                оферты
+              </p>
+              <button type="submit" class="form__btn">
+                Отправить форму
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <!-- Контакты компании-->
+        <div class="footer__information">
+          <div class="footer__contacts">
+            <a href="../index.html" class="logo"
+              >Smart<span class="logo__inverse">KB</span></a
+            >
+            <ul class="list">
+              <li>
+                <address class="footer__address">
+                  Украина 04107 г. Киев, ул. Подгорная, 12 кв. 31
+                </address>
+              </li>
+              <li class="contacts__item">
+                <a
+                  href="mailto:chbv@ukr.net"
+                  class="contacts__link footer__mail"
+                  >chbv@ukr.net</a
+                >
+              </li>
+              <li class="contacts__item">
+                <a href="tel:+380672328248" class="contacts__link"
+                  >+380 67 232 8248</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-contacts">
+            <p class="footer__message">Присоединяйтесь</p>
+            <ul class="footer-soc-list list">
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link link"
+                  ><svg class="footer-soc-icon" width="20" height="20">
+                    <use href="../images/icons.svg#instagram"></use></svg
+                ></a>
+              </li>
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link link"
+                  ><svg class="footer-soc-icon" width="20" height="20">
+                    <use href="../images/icons.svg#twitter"></use></svg
+                ></a>
+              </li>
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link link"
+                  ><svg class="footer-soc-icon" width="20" height="20">
+                    <use href="../images/icons.svg#facebook"></use></svg
+                ></a>
+              </li>
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link link"
+                  ><svg class="footer-soc-icon" width="20" height="20">
+                    <use href="../images/icons.svg#linkedin"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

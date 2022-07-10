@@ -1,0 +1,19 @@
+.address {
+  @include typicalPadding(60px, 60px);
+
+  background-color: var(--color-bg-main);
+}
+
+.address__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.address__contacts {
+}
+
+.address__title {
+}
+.address__info {
+}
+.adress__link {
+}
