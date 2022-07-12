@@ -8,12 +8,34 @@
   display: flex;
   justify-content: space-between;
 }
+
+.address_title {
+  margin-top: 20px;
+
+  @include font(700, 20px, 1.5, null);
+  color: var(--color-text-primary);
+}
 .address__contacts {
 }
 
-.address__title {
+.address__text {
+  margin-top: 25px;
+  margin-bottom: 10px;
+
+  @include font(700, 18px, 1.5, null);
+  color: var(--color-text-secondary);
 }
 .address__info {
+  margin-bottom: 5px;
+
+  @include font(500, 16px, 1.5, null);
+  font-style: normal;
+  color: var(--color-text-secondary);
 }
 .adress__link {
+  display: block;
+  margin-bottom: 5px;
+
+  @include font(500, 16px, 1.5, null);
+  color: var(--color-text-secondary);
 }

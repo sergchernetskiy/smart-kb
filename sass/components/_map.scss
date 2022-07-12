@@ -1,0 +1,8 @@
+.map {
+  @include typicalPadding(60px, 60px);
+}
+
+.map__wrapper {
+  border: none;
+  box-shadow: 0 2px 40px rgb(142 156 170 / 60%);
+}
