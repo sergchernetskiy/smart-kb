@@ -35,6 +35,23 @@
           <a href="./index.html" class="logo"
             >Smart<span class="logo__active">KB</span></a
           >
+          <button
+            type="button"
+            class="menu__toggle js-open-menu is-open"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                href="./images/icons.svg#mob-menu"
+                class="mob-menu__icon"
+              ></use>
+            </svg>
+          </button>
           <ul class="site-nav list">
             <li class="site-nav__item">
               <a
@@ -83,6 +100,91 @@
 
     <!-- Unique page content -->
     <main>
+      <!-- Mob-menu -->
+      <section class="mob-menu">
+        <div
+          class="mob-menu__container js-menu-container"
+          id="mobile-menu"
+        >
+          <button
+            type="button"
+            class="menu__toggle js-close-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                href="./images/icons.svg#mob-menu-close"
+                class="mob-menu__icon-close"
+              ></use>
+            </svg>
+          </button>
+          <div class="mob-menu__top">
+            <ul class="mob-nav list">
+              <li class="mob-nav__item">
+                <a
+                  href="./index.html"
+                  class="site-nav__link site-nav__current"
+                  >О нас</a
+                >
+              </li>
+              <li class="mob-nav__item">
+                <a href="./pages/service.html" class="site-nav__link"
+                  >Сервис</a
+                >
+              </li>
+              <li class="mob-nav__item">
+                <a href="./pages/projects.html" class="site-nav__link"
+                  >Проекты</a
+                >
+              </li>
+              <li class="mob-nav__item">
+                <a href="./pages/contacts.html" class="site-nav__link"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu__top">
+            <ul class="mob-contacts">
+              <li class="mob-contacts__item">
+                <a
+                  href="tel:+380672328248"
+                  class="mob-contacts__link-tel link"
+                  >+380 67 232 8248</a
+                >
+              </li>
+              <li class="mob-contacts__item">
+                <a
+                  href="mailto:chbv@ukr.net"
+                  class="mob-contacts__link-mail link"
+                  >chbv@ukr.net</a
+                >
+              </li>
+            </ul>
+            <ul class="social-mob__list">
+              <li class="social-mob__item">
+                <a href="/" class="social-mob__link link">Instagram</a>
+              </li>
+              <li class="social-mob__item">
+                <a href="/" class="social-mob__link link">Twitter</a>
+              </li>
+              <li class="social-mob__item">
+                <a href="/" class="social-mob__link link">Facebook</a>
+              </li>
+              <li class="social-mob__item">
+                <a href="/" class="social-mob__link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hero -->
       <section class="hero">
         <div class="container">
           <div class="swiper mySwiper">
@@ -401,24 +503,6 @@
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-      });
-    </script>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
@@ -427,5 +511,7 @@
     ></script>
     <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/horizontal-swiper.js"></script>
+    <script src="./js/vertical-swiper.js"></script>
   </body>
 </html>

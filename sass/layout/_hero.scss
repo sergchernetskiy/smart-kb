@@ -1,9 +1,20 @@
 .hero {
   position: relative;
 
-  background: linear-gradient(to right, #74ebd5, #acb6e5);
-  width: 1600px;
+  background: linear-gradient(to bottom, #74ebd5, #acb6e5);
+  width: 100vw;
+  height: 502px;
   margin: 0 auto;
+  overflow: hidden;
+
+  @include tablet {
+    height: 416px;
+    margin: 0 auto;
+  }
+
+  @include desktop {
+    height: 500px;
+  }
 }
 
 .hero__title {
@@ -13,14 +24,19 @@
   max-width: 900px;
   z-index: 2;
 
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  @include font(900, 30px, 1.36, 0.06em);
   text-align: center;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
 
   color: var(--color-text-contrast);
 
   transform: translate(-50%, -50%);
+
+  @include tablet {
+    @include font(900, 30px, 1.36, 0.06em);
+  }
+
+  @include desktop {
+    @include font(900, 36px, 1.36, 0.06em);
+  }
 }
