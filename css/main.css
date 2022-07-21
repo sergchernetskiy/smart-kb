@@ -93,22 +93,22 @@ ul {
 }
 
 .container {
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
-@media mobile {
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
 }
-@media tablet {
+@media screen and (min-width: 768px) {
   .container {
     width: 768px;
   }
 }
-@media desktop {
+@media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
   }
@@ -122,7 +122,7 @@ ul {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  z-index: 2;
+  z-index: 1;
 }
 @media screen and (min-width: 768px) {
   .menu__toggle {
@@ -910,9 +910,9 @@ ul {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 98vh;
+  height: 100vh;
   padding: 48px 40px;
-  z-index: 3;
+  z-index: 2;
   background-color: var(--color-bg-main);
   display: -webkit-box;
   display: -ms-flexbox;
