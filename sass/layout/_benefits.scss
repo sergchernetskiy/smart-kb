@@ -6,22 +6,21 @@
   @extend %is-hidden;
 }
 
-.benefits__label {
-  margin-bottom: 10px;
-
-  @include font(700, 14px, 1.14, null);
-  text-transform: uppercase;
-}
-
 .benefits__list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .benefits__item {
-  width: 270px;
+  width: 100%;
 
-  &:not(:last-child) {
-    margin-right: 30px;
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @include desktop {
+    width: calc((100% - 90px) / 4);
   }
 }
 
@@ -33,6 +32,18 @@
   @include centeredFlex(flex, center, center);
 
   margin-bottom: 30px;
+}
+
+.benefits__label {
+  margin-bottom: 10px;
+
+  @include font(700, 14px, 1.14, null);
+  text-align: center;
+  text-transform: uppercase;
+
+  @include tablet {
+    text-align: left;
+  }
 }
 
 .benefits__text {

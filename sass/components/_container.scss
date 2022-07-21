@@ -1,18 +1,19 @@
 .container {
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 
-  @include mobile {
+  // Переписать через миксин
+  @media mobile {
     width: 480px;
   }
 
-  @include tablet {
+  @media tablet {
     width: 768px;
   }
 
-  @include desktop {
+  @media desktop {
     width: 1200px;
   }
 }
