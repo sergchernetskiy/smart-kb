@@ -52,6 +52,7 @@ body {
 
 .link {
   text-decoration: none;
+  color: inherit;
 }
 
 h1,
@@ -97,6 +98,7 @@ ul {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  overflow: hidden;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -460,8 +462,21 @@ ul {
 
 .swiper-slide {
   display: block;
-  width: 1700px;
+  width: 480px;
   height: 500px;
+  z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .swiper-slide {
+    width: 768px;
+    height: 500px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .swiper-slide {
+    width: 1700px;
+    height: 500px;
+  }
 }
 
 .video {
@@ -910,9 +925,9 @@ ul {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 98vh;
   padding: 48px 40px;
-  z-index: 2;
+  z-index: 999;
   background-color: var(--color-bg-main);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -924,8 +939,8 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 @media (min-width: 768px) {
   .mob-menu__container {
@@ -942,8 +957,8 @@ ul {
 }
 
 .is-open {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 .is-open.mob-menu__icon {
   display: none;
@@ -1016,8 +1031,8 @@ ul {
 
 .hero__title {
   position: absolute;
-  top: 20%;
-  left: 40%;
+  top: 15%;
+  left: 50%;
   max-width: 900px;
   z-index: 2;
   font-weight: 900;
@@ -1036,6 +1051,8 @@ ul {
     font-size: 30px;
     line-height: 1.36;
     letter-spacing: 0.06em;
+    top: 20%;
+    left: 40%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1044,6 +1061,8 @@ ul {
     font-size: 36px;
     line-height: 1.36;
     letter-spacing: 0.06em;
+    top: 20%;
+    left: 40%;
   }
 }
 

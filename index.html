@@ -106,114 +106,172 @@
     <main>
       <!-- Mob-menu -->
       <section class="mob-menu">
-        <div
-          class="mob-menu__container js-menu-container"
-          id="mobile-menu"
-        >
-          <button
-            type="button"
-            class="menu__toggle js-close-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
+        <div class="container">
+          <div
+            class="mob-menu__container js-menu-container"
+            id="mobile-menu"
           >
-            <svg
-              width="40"
-              height="40"
-              aria-label="Переключатель мобильного меню"
+            <button
+              type="button"
+              class="menu__toggle js-close-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
             >
-              <use
-                href="./images/icons.svg#mob-menu-close"
-                class="mob-menu__icon-close"
-              ></use>
-            </svg>
-          </button>
-          <div class="mob-menu__top">
-            <ul class="mob-nav list">
-              <li class="mob-nav__item">
-                <a
-                  href="./index.html"
-                  class="mob-nav__link mob-nav__current"
-                  >О нас</a
-                >
-              </li>
-              <li class="mob-nav__item">
-                <a href="./pages/service.html" class="mob-nav__link"
-                  >Сервис</a
-                >
-              </li>
-              <li class="mob-nav__item">
-                <a href="./pages/projects.html" class="mob-nav__link"
-                  >Проекты</a
-                >
-              </li>
-              <li class="mob-nav__item">
-                <a href="./pages/contacts.html" class="mob-nav__link"
-                  >Контакты</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="mob-menu__top">
-            <ul class="mob-contacts">
-              <li class="mob-contacts__item">
-                <a
-                  href="tel:+380672328248"
-                  class="mob-contacts__link-tel link"
-                  >+380 67 232 8248</a
-                >
-              </li>
-              <li class="mob-contacts__item">
-                <a
-                  href="mailto:chbv@ukr.net"
-                  class="mob-contacts__link-mail link"
-                  >chbv@ukr.net</a
-                >
-              </li>
-            </ul>
-            <ul class="social-mob__list">
-              <li class="social-mob__item">
-                <a href="/" class="social-mob__link link">Instagram</a>
-              </li>
-              <li class="social-mob__item">
-                <a href="/" class="social-mob__link link">Twitter</a>
-              </li>
-              <li class="social-mob__item">
-                <a href="/" class="social-mob__link link">Facebook</a>
-              </li>
-              <li class="social-mob__item">
-                <a href="/" class="social-mob__link link">LinkedIn</a>
-              </li>
-            </ul>
+              <svg
+                width="40"
+                height="40"
+                aria-label="Переключатель мобильного меню"
+              >
+                <use
+                  href="./images/icons.svg#mob-menu-close"
+                  class="mob-menu__icon-close"
+                ></use>
+              </svg>
+            </button>
+            <div class="mob-menu__top">
+              <ul class="mob-nav list">
+                <li class="mob-nav__item list">
+                  <a
+                    href="./index.html"
+                    class="mob-nav__link mob-nav__current link"
+                    >О нас</a
+                  >
+                </li>
+                <li class="mob-nav__item">
+                  <a href="./pages/service.html" class="mob-nav__link link"
+                    >Сервис</a
+                  >
+                </li>
+                <li class="mob-nav__item">
+                  <a
+                    href="./pages/projects.html"
+                    class="mob-nav__link link"
+                    >Проекты</a
+                  >
+                </li>
+                <li class="mob-nav__item">
+                  <a
+                    href="./pages/contacts.html"
+                    class="mob-nav__link link"
+                    >Контакты</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="mob-menu__top">
+              <ul class="mob-contacts list">
+                <li class="mob-contacts__item">
+                  <a
+                    href="tel:+380672328248"
+                    class="mob-contacts__link-tel link"
+                    >+380 67 232 8248</a
+                  >
+                </li>
+                <li class="mob-contacts__item">
+                  <a
+                    href="mailto:chbv@ukr.net"
+                    class="mob-contacts__link-mail link"
+                    >chbv@ukr.net</a
+                  >
+                </li>
+              </ul>
+              <ul class="social-mob__list list">
+                <li class="social-mob__item">
+                  <a href="/" class="social-mob__link link">Instagram</a>
+                </li>
+                <li class="social-mob__item">
+                  <a href="/" class="social-mob__link link">Twitter</a>
+                </li>
+                <li class="social-mob__item">
+                  <a href="/" class="social-mob__link link">Facebook</a>
+                </li>
+                <li class="social-mob__item">
+                  <a href="/" class="social-mob__link link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Hero -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <div class="swiper mySwiper">
             <h1 class="hero__title">Инжиниринговая компания</h1>
             <div class="slider swiper-wrapper">
-              <img
-                class="swiper-slide"
-                src="./images/hero-1.jpg"
-                alt="Проект Яхонт"
-              />
-              <img
-                class="swiper-slide"
-                src="./images/hero-2.jpg"
-                alt="Проект"
-              />
-              <img
-                class="swiper-slide"
-                src="./images/hero-3.jpg"
-                alt="Бункер-смеситель"
-              />
+              <picture class="swiper-slide">
+                <source
+                  srcset="./images/hero-1.jpg 1x, ./images/hero-1.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/png"
+                />
+                <source
+                  srcset="./images/hero-1.jpg 1x, ./images/hero-1.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/png"
+                />
+                <source
+                  srcset="
+                    ./images/hero-1-mob.jpg 1x,
+                    ./images/hero-1-mob.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/png"
+                />
+                <img
+                  class="hero__icecream"
+                  src="./images/hero-1.jpg"
+                  alt="hero-1"
+                />
+              </picture>
+              <picture class="swiper-slide">
+                <source
+                  srcset="./images/hero-2.jpg 1x, ./images/hero-2.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/png"
+                />
+                <source
+                  srcset="./images/hero-2.jpg 1x, ./images/hero-2.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/png"
+                />
+                <source
+                  srcset="
+                    ./images/hero-2-mob.jpg 1x,
+                    ./images/hero-2-mob.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/png"
+                />
+                <img src="./images/hero-2.jpg" alt="Проект" />
+              </picture>
+              <picture class="swiper-slide">
+                <source
+                  srcset="./images/hero-3.jpg 1x, ./images/hero-3.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/png"
+                />
+                <source
+                  srcset="./images/hero-3.jpg 1x, ./images/hero-3.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/png"
+                />
+                <source
+                  srcset="
+                    ./images/hero-3-mob.png 1x,
+                    ./images/hero-3-mob.png 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/png"
+                />
+                <img src="./images/hero-3.jpg" alt="Бункер-смеситель" />
+              </picture>
             </div>
             <div class="swiper-pagination"></div>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- Our benefits -->
       <section class="benefits">
