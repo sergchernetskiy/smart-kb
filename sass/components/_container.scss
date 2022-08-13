@@ -4,6 +4,7 @@
   padding-left: 15px;
   padding-right: 15px;
   overflow: hidden;
+  border: 1px solid red;
 
   @include mobile {
     width: 480px;

@@ -5,15 +5,33 @@
 }
 
 .partners__title {
+  margin-bottom: 30px;
+
+  @include desktop {
+    margin-bottom: 50px;
+  }
 }
 
 .partners__list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
 }
 
 .partners__item {
+  width: calc((100% - 30px) / 2);
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+
+  @include tablet {
+    width: calc((100% - 60px) / 3);
+  }
+  @include desktop {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .partners__link {
