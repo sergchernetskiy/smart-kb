@@ -2,9 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="description" content="Smart-kb" />
     <meta
-      name="description"
-      content="Эффективные решения для вашего бизнеса"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
     />
     <link rel="shortcut icon" href="./images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,6 +33,23 @@
           <a href="../index.html" class="logo"
             >Smart<span class="logo__active">KB</span></a
           >
+          <button
+            type="button"
+            class="menu__toggle js-open-menu is-open"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                href="../images/icons.svg#mob-menu"
+                class="mob-menu__icon"
+              ></use>
+            </svg>
+          </button>
           <ul class="site-nav list">
             <li class="site-nav__item">
               <a href="../index.html" class="site-nav__link">О нас</a>
@@ -78,6 +96,96 @@
 
     <!-- Unique page content -->
     <main>
+      <!-- Mob-menu -->
+      <section class="mob-menu">
+        <div class="container">
+          <div
+            class="mob-menu__container js-menu-container"
+            id="mobile-menu"
+          >
+            <button
+              type="button"
+              class="menu__toggle js-close-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg
+                width="40"
+                height="40"
+                aria-label="Переключатель мобильного меню"
+              >
+                <use
+                  href="../images/icons.svg#mob-menu-close"
+                  class="mob-menu__icon-close"
+                ></use>
+              </svg>
+            </button>
+            <div class="mob-menu__top">
+              <ul class="mob-nav list">
+                <li class="mob-nav__item list">
+                  <a href="../index.html" class="mob-nav__link link"
+                    >О нас</a
+                  >
+                </li>
+                <li class="mob-nav__item">
+                  <a
+                    href="../pages/service.html"
+                    class="mob-nav__link link"
+                    >Сервис</a
+                  >
+                </li>
+                <li class="mob-nav__item">
+                  <a
+                    href="../pages/projects.html"
+                    class="mob-nav__link link"
+                    >Проекты</a
+                  >
+                </li>
+                <li class="mob-nav__item">
+                  <a
+                    href="../pages/contacts.html"
+                    class="mob-nav__link mob-nav__current link"
+                    >Контакты</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="mob-menu__top">
+              <ul class="mob-contacts list">
+                <li class="mob-contacts__item">
+                  <a
+                    href="tel:+380672328248"
+                    class="mob-contacts__link-tel link"
+                    >+380 67 232 8248</a
+                  >
+                </li>
+                <li class="mob-contacts__item">
+                  <a
+                    href="mailto:chbv@ukr.net"
+                    class="mob-contacts__link-mail link"
+                    >chbv@ukr.net</a
+                  >
+                </li>
+              </ul>
+              <ul class="social-mob__list list">
+                <li class="social-mob__item">
+                  <a href="/" class="social-mob__link link">Instagram</a>
+                </li>
+                <li class="social-mob__item">
+                  <a href="/" class="social-mob__link link">Twitter</a>
+                </li>
+                <li class="social-mob__item">
+                  <a href="/" class="social-mob__link link">Facebook</a>
+                </li>
+                <li class="social-mob__item">
+                  <a href="/" class="social-mob__link link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="address">
         <div class="container">
           <div class="address__wrapper">
@@ -200,61 +308,70 @@
       <div class="container">
         <!-- Контакты компании-->
         <div class="footer__information">
-          <div class="footer__contacts">
-            <a href="../index.html" class="logo"
-              >Smart<span class="logo__inverse">KB</span></a
-            >
-            <ul class="list">
-              <li>
-                <address class="footer__address">
-                  Украина г. Киев, ул. Бориспольская, 9
-                </address>
-              </li>
-              <li class="contacts__item">
-                <a
-                  href="mailto:chbv@ukr.net"
-                  class="contacts__link footer__mail"
-                  >chbv@ukr.net</a
-                >
-              </li>
-              <li class="contacts__item">
-                <a href="tel:+380672328248" class="contacts__link"
-                  >+380 67 232 8248</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="footer-contacts">
-            <p class="footer__message">Присоединяйтесь</p>
-            <ul class="footer-soc-list list">
-              <li class="footer-soc-item">
-                <a href="" class="footer-soc-link link"
-                  ><svg class="footer-soc-icon" width="20" height="20">
-                    <use href="../images/icons.svg#instagram"></use></svg
-                ></a>
-              </li>
-              <li class="footer-soc-item">
-                <a href="" class="footer-soc-link link"
-                  ><svg class="footer-soc-icon" width="20" height="20">
-                    <use href="../images/icons.svg#twitter"></use></svg
-                ></a>
-              </li>
-              <li class="footer-soc-item">
-                <a href="" class="footer-soc-link link"
-                  ><svg class="footer-soc-icon" width="20" height="20">
-                    <use href="../images/icons.svg#facebook"></use></svg
-                ></a>
-              </li>
-              <li class="footer-soc-item">
-                <a href="" class="footer-soc-link link"
-                  ><svg class="footer-soc-icon" width="20" height="20">
-                    <use href="../images/icons.svg#linkedin"></use></svg
-                ></a>
-              </li>
-            </ul>
+          <div class="footer__container-small">
+            <div class="footer__contacts">
+              <a href="../index.html" class="logo"
+                >Smart<span class="logo__inverse">KB</span></a
+              >
+              <ul class="list">
+                <li>
+                  <address class="footer__address">
+                    Украина г. Киев, ул. Бориспольская, 9
+                  </address>
+                </li>
+                <li class="footer__item">
+                  <a
+                    href="mailto:chbv@ukr.net"
+                    class="footer__link footer__mail link"
+                    >chbv@ukr.net</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="tel:+380672328248" class="footer__link link"
+                    >+380 67 232 8248</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer__soc">
+              <p class="footer__soc-message">Присоединяйтесь</p>
+              <ul class="footer__soc-list list">
+                <li class="footer__soc-item">
+                  <a href="" class="footer__soc-link link"
+                    ><svg class="footer__soc-icon" width="20" height="20">
+                      <use href="../images/icons.svg#instagram"></use></svg
+                  ></a>
+                </li>
+                <li class="footer__soc-item">
+                  <a href="" class="footer__soc-link link"
+                    ><svg class="footer__soc-icon" width="20" height="20">
+                      <use href="../images/icons.svg#twitter"></use></svg
+                  ></a>
+                </li>
+                <li class="footer__soc-item">
+                  <a href="" class="footer__soc-link link"
+                    ><svg class="footer__soc-icon" width="20" height="20">
+                      <use href="../images/icons.svg#facebook"></use></svg
+                  ></a>
+                </li>
+                <li class="footer__soc-item">
+                  <a href="" class="footer__soc-link link"
+                    ><svg class="footer__soc-icon" width="20" height="20">
+                      <use href="../images/icons.svg#linkedin"></use></svg
+                  ></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="../js/mobile-menu.js"></script>
   </body>
 </html>
