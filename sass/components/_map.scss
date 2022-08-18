@@ -1,8 +1,18 @@
 .map {
-  @include typicalPadding(60px, 60px);
+  @include typicalPadding(20px, 90px);
 }
 
 .map__wrapper {
   border: none;
-  box-shadow: 0 2px 40px rgb(142 156 170 / 60%);
+  box-shadow: 0 2px 15px rgb(142 156 170 / 60%);
+  width: 92vw;
+  height: 730px;
+
+  @include tablet {
+    width: 740px;
+    height: 450px;
+  }
+  @include desktop {
+    width: 1170px;
+  }
 }

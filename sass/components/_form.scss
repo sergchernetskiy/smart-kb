@@ -1,6 +1,16 @@
 .form {
   box-shadow: 0 2px 40px rgb(142 156 170 / 60%);
   padding: 30px;
+  width: 370px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  margin-top: 30px;
+
+  @include tablet {
+    @include font(700, 20px, 1.15, null);
+    width: 600px;
+  }
 }
 
 .form__title {
@@ -20,7 +30,7 @@
 }
 
 .form__input {
-  width: 500px;
+  width: 310px;
   height: 40px;
   background-color: var(--color-bg-light);
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -47,6 +57,10 @@
   &:not(:placeholder-shown):invalid {
     background-color: rgba(125, 0, 0, 0.2);
     border-color: rgba(125, 0, 0, 0.6);
+  }
+
+  @include tablet {
+    width: 540px;
   }
 }
 
@@ -79,7 +93,7 @@
 }
 
 .form__textarea {
-  width: 500px;
+  width: 310px;
   height: 100px;
   background-color: var(--color-bg-light);
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -103,6 +117,10 @@
     @include font(400, 12px, 1.167, 0.01em);
     color: rgba(117, 117, 117, 0.5);
   }
+
+  @include tablet {
+    width: 540px;
+  }
 }
 
 .form__text {
@@ -114,7 +132,7 @@
 
 .form__btn {
   display: flex;
-  width: 500px;
+  width: 310px;
   justify-content: center;
   background-color: var(--color-bg-accent);
   border: 2px solid var(--color-bg-accent);
@@ -142,5 +160,9 @@
   &:focus-visible {
     outline: 1px solid #188ce8;
     border-radius: 4px;
+  }
+
+  @include tablet {
+    width: 540px;
   }
 }

@@ -2,17 +2,17 @@
   position: relative;
 
   background: linear-gradient(to bottom, #74ebd5, #acb6e5);
-  height: 502px;
+  height: 500px;
   margin: 0 auto;
   overflow: hidden;
 
   @include tablet {
-    height: 416px;
+    height: 258px;
     margin: 0 auto;
   }
 
   @include desktop {
-    height: 500px;
+    height: 410px;
   }
 }
 

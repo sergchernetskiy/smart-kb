@@ -2,10 +2,6 @@
   @include typicalPadding(60px, 60px);
 
   background-color: var(--color-bg-dark);
-
-  @include desktop {
-    @include typicalPadding(94px, 94px);
-  }
 }
 
 .footer__container-small {
