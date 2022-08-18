@@ -3,4 +3,13 @@
   border: 1px solid var(--color-icon);
   border-radius: 4px;
   box-shadow: 0 2px 40px rgb(142 156 170 / 60%);
+  max-width: 92vw;
+
+  @include tablet {
+    width: 738px;
+  }
+  @include desktop {
+    width: 1170px;
+    margin-left: 8px;
+  }
 }

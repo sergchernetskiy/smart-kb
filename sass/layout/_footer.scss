@@ -18,7 +18,7 @@
   }
 
   @include desktop {
-    gap: 570px;
+    gap: 660px;
   }
 }
 
@@ -57,7 +57,7 @@
   margin-bottom: 10px;
   text-align: center;
 
-  @include font(400, 20px, 1.5, null);
+  @include font(400, 18px, 1.5, null);
   color: var(--color-text-contrast);
 
   @include tablet {
@@ -73,7 +73,7 @@
 }
 
 .footer__link {
-  @include font(null, 20px, 1.5, null);
+  @include font(null, 18px, 1.5, null);
   color: rgba(255, 255, 255, 0.6);
 
   transition: color 250ms var(--timing-function);
@@ -98,7 +98,7 @@
   padding-bottom: 20px;
   text-align: center;
 
-  @include font(700, 20px, 1.143, null);
+  @include font(700, 18px, 1.143, null);
   text-transform: uppercase;
   color: var(--color-text-contrast);
 
@@ -110,10 +110,6 @@
 .footer__soc-list {
   display: flex;
   justify-content: center;
-
-  @include desktop {
-    margin-right: 93px;
-  }
 }
 
 .footer__soc-item {

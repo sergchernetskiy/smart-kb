@@ -47,8 +47,15 @@
 .service__product-thumb {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 220px;
   overflow: hidden;
+
+  @include tablet {
+    height: 200px;
+  }
+  @include desktop {
+    height: 340px;
+  }
 }
 
 .service__item img {
@@ -73,7 +80,7 @@
   height: 100%;
   left: 0;
   bottom: 0;
-  padding: 150px 24px;
+  padding: 24px 24px;
   border-radius: 4px;
   transform: translateY(101%);
 
@@ -83,6 +90,10 @@
   color: var(--color-text-contrast);
 
   transition: transform 250ms var(--timing-function);
+
+  @include desktop {
+    padding: 100px 24px;
+  }
 }
 
 .service__transp-ident {

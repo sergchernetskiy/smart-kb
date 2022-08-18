@@ -1,7 +1,14 @@
 .portfolio {
-  @include typicalPadding(94px, 94px);
+  @include typicalPadding(40px, 60px);
 
   background-color: var(--color-bg-main);
+
+  @include tablet {
+    @include typicalPadding(40px, 70px);
+  }
+  @include desktop {
+    @include typicalPadding(94px, 94px);
+  }
 }
 
 .portfolio-title {
