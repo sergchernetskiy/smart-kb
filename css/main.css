@@ -93,6 +93,75 @@ ul {
   background: linear-gradient(to bottom, var(--color-bg-accent), #27619b);
 }
 
+.lang {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .lang {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+.lang__list,
+.mob-lang__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .lang__list,
+.mob-lang__list {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    margin-top: 0;
+    gap: 15px;
+  }
+}
+
+.lang__item,
+.mob-lang__item {
+  width: 40px;
+  height: 40px;
+}
+
+.lang__link,
+.mob-lang__link {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: color 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function);
+}
+.lang__link:focus-visible,
+.mob-lang__link:focus-visible {
+  outline: 2px solid var(--color-bg-accent);
+  border-radius: 4px;
+}
+
+.lang__current,
+.mob-lang__current {
+  color: var(--color-text-accent);
+  border: 2px solid var(--color-text-accent);
+  border-radius: 50%;
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -1176,7 +1245,7 @@ ul {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  width: 600px;
+  width: 450px;
   height: 800px;
   padding: 40px;
   background-color: var(--color-bg-main);
@@ -1272,6 +1341,8 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .about__text-wrapper {
@@ -1288,8 +1359,9 @@ ul {
   padding-left: 10px;
   text-align: justify;
   text-indent: 25px;
+  margin-top: 20px;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.17;
 }
 
