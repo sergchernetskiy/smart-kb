@@ -13,7 +13,7 @@
   justify-content: space-around;
   align-items: center;
 
-  margin-top: 30px;
+  /*  margin-top: 30px; */
 
   @include tablet {
     justify-content: end;
@@ -24,8 +24,9 @@
 
 .lang__item,
 .mob-lang__item {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
+  padding: 3px;
 }
 
 .lang__link,
@@ -36,17 +37,24 @@
   justify-content: center;
   align-items: center;
 
-  transition: color 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function),
+    transform 250ms var(--timing-function);
 
   &:focus-visible {
     outline: 2px solid var(--color-bg-accent);
-    border-radius: 4px;
+    border-radius: 50%;
   }
 }
 
-.lang__current,
+/* .lang__current,
 .mob-lang__current {
   color: var(--color-text-accent);
   border: 2px solid var(--color-text-accent);
   border-radius: 50%;
+} */
+
+.lang__img {
+  &:hover {
+    transform: scale(1.07);
+  }
 }

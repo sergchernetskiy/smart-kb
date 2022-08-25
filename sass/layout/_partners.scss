@@ -35,4 +35,8 @@
 }
 
 .partners__link {
+  &:focus-visible {
+    outline: 2px solid var(--color-bg-accent);
+    border-radius: 4px;
+  }
 }

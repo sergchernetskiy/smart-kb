@@ -118,7 +118,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 30px;
+  /*  margin-top: 30px; */
 }
 @media screen and (min-width: 768px) {
   .lang__list,
@@ -133,8 +133,9 @@ ul {
 
 .lang__item,
 .mob-lang__item {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
+  padding: 3px;
 }
 
 .lang__link,
@@ -150,20 +151,26 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: color 250ms var(--timing-function);
-  transition: color 250ms var(--timing-function);
+  -webkit-transition: color 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function), transform 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function), transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
 }
 .lang__link:focus-visible,
 .mob-lang__link:focus-visible {
   outline: 2px solid var(--color-bg-accent);
-  border-radius: 4px;
+  border-radius: 50%;
 }
 
-.lang__current,
+/* .lang__current,
 .mob-lang__current {
   color: var(--color-text-accent);
   border: 2px solid var(--color-text-accent);
   border-radius: 50%;
+} */
+.lang__img:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
 }
 
 .container {
@@ -486,6 +493,10 @@ ul {
 .button {
   border: none;
   cursor: pointer;
+}
+.button:focus-visible {
+  outline: 2px solid var(--color-bg-accent);
+  border-radius: 4px;
 }
 
 .backdrop {
@@ -1382,13 +1393,6 @@ ul {
 
 .about__img {
   width: 370px;
-  /* @include tablet {
-    width: 370px;
-  }
-
-  @include desktop {
-    width: 370px;
-  } */
 }
 
 .about__text-wrapper {
@@ -1477,6 +1481,11 @@ ul {
   }
 }
 
+.partners__link:focus-visible {
+  outline: 2px solid var(--color-bg-accent);
+  border-radius: 4px;
+}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1500,7 +1509,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .footer__container-small {
-    gap: 660px;
+    gap: 555px;
   }
 }
 
@@ -1542,6 +1551,17 @@ ul {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    min-width: 350px;
+  }
+}
+
 .footer__address {
   margin-top: 20px;
   margin-bottom: 10px;
@@ -1562,6 +1582,7 @@ ul {
     margin-right: 70px;
     margin-bottom: 9px;
     text-align: start;
+    min-width: 350px;
   }
 }
 
