@@ -8,11 +8,36 @@
 .about__card {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+
+  @include desktop {
+    flex-wrap: nowrap;
+  }
+}
+
+.about__img {
+  width: 370px;
+
+  /* @include tablet {
+    width: 370px;
+  }
+
+  @include desktop {
+    width: 370px;
+  } */
 }
 
 .about__text-wrapper {
   display: flex;
   flex-direction: column;
+
+  @include tablet {
+    flex-wrap: wrap;
+  }
+
+  @include desktop {
+    flex-wrap: nowrap;
+  }
 }
 
 .about__text {

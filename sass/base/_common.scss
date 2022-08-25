@@ -9,6 +9,10 @@ body {
   color: var(--color-text-primary);
 }
 
+body.modal-open {
+  overflow-y: hidden;
+}
+
 .list {
   list-style: none;
 }

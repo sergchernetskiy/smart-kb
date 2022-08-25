@@ -14,7 +14,7 @@
 
   transition: shadow 250ms var(--timing-function),
     background-color 250ms var(--timing-function),
-    fill 250ms var(--timing-function) 250ms;
+    fill 250ms var(--timing-function);
 
   &:hover,
   &:focus {
