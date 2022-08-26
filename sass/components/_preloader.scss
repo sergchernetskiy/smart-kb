@@ -5,15 +5,19 @@
   width: 100vw;
   height: 100vh;
   z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
 
   transform: translateX(-120%);
-  background: var(--color-text-accent);
+  background: var(--color-bg-main);
 
-  animation: zoom-overlay 2s ease-out 1s;
+  animation: zoom-overlay 2s ease-out;
 }
 
 .preloader__text {
-  color: var(--color-bg-main);
+  color: var(--color-text-accent);
   text-align: center;
   font-family: "Titan One", arial;
   @include font(40px, 900, 1.5, 0.1em);
@@ -31,8 +35,8 @@
 }
 
 .preloader__img {
-  margin: 0 auto;
   width: 300px;
+  height: auto;
 
   @include desktop {
     width: 500px;

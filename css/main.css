@@ -534,15 +534,25 @@ ul {
   width: 100vw;
   height: 100vh;
   z-index: 9999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: hidden;
   -webkit-transform: translateX(-120%);
           transform: translateX(-120%);
-  background: var(--color-text-accent);
-  -webkit-animation: zoom-overlay 2s ease-out 1s;
-          animation: zoom-overlay 2s ease-out 1s;
+  background: var(--color-bg-main);
+  -webkit-animation: zoom-overlay 2s ease-out;
+          animation: zoom-overlay 2s ease-out;
 }
 
 .preloader__text {
-  color: var(--color-bg-main);
+  color: var(--color-text-accent);
   text-align: center;
   font-family: "Titan One", arial;
   font-weight: 40px;
@@ -569,8 +579,8 @@ ul {
 }
 
 .preloader__img {
-  margin: 0 auto;
   width: 300px;
+  height: auto;
 }
 @media screen and (min-width: 1200px) {
   .preloader__img {
